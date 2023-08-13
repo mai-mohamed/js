@@ -1,0 +1,26 @@
+function Square(){
+  var x;
+  this.set =function(m){x=m}
+  this.get =function(){return x}
+ 
+}
+var square = new Square();
+console.log(square)
+square.set(5);
+var y =square.get()
+console.log(y)
+
+//////////an other code
+function Square(){
+ var length ,width;
+ this.setLength = function(len){length=len};
+ this.setWidth=function(w){width=w};
+ this.area=function(){return length * width}
+ this.getLength=function(){return length}
+ this.getWidth = function(){return width};
+}
+//creating new instance from square
+newSquare = new Square();
+newSquare.setLength(5);
+newSquare.setWidth(10);
+console.log(newSquare.area())
